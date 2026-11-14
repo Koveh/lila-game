@@ -1,0 +1,48 @@
+:root {
+  --font-display: 'Fraunces', 'Times New Roman', serif;
+  --font-body: 'Manrope', 'Segoe UI', sans-serif;
+  --ink: #f3efe6;
+  --muted: #b7b0a3;
+  --line: rgba(243, 239, 230, 0.12);
+  --lift: rgba(255, 255, 255, 0.04);
+  --accent: #e0a53b;
+  --accent-hot: #f0b84d;
+  --bg0: #0c1016;
+  --bg1: #151b24;
+  color: var(--ink);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(224, 165, 59, 0.12), transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, rgba(74, 140, 120, 0.1), transparent 50%),
+    linear-gradient(180deg, var(--bg1), var(--bg0));
+  font-family: var(--font-body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.45;
+  font-weight: 450;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(224, 165, 59, 0.35);
+}
